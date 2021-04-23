@@ -1,6 +1,7 @@
 const prompt = require('prompt-sync')();
 const chalk = require('chalk');
 var setTitle = require('console-title');
+var fs = require('fs');
 setTitle('Facebook Hacking By . . .');
 console.clear()
 
@@ -16,6 +17,8 @@ console.log(chalk.red(`
 	╠═╣╠═╣║  ╠╩╗║║║║║ ╦     	
 	╩ ╩╩ ╩╚═╝╩ ╩╩╝╚╝╚═╝ 	By . . . 
 	`));
+
+
 
 let idfb = prompt(chalk.white('Enter Id Facebook: '));
 
@@ -94,70 +97,44 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 99 %'))
+		console.log(chalk.yellow('Status : Password is ณncorrect Trying again'))
 
 	}, 1200000);
 
-
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 99 %'))
+		console.log(chalk.yellow('Status : 100 %'))
 
-	}, 1400000);
-
-
-	main2()
-
-}
-
-function main2() {
-
+	}, 1210000);
 
 
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 85 %'))
 
-	}, 300000);
+		var output = `
+		⣠⡶⠚⠛⠲⢄⡀
+		⣼⠁    ⠀⠀⠳⢤⣄
+		⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
+		⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
+		⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀  ⠀⠈⠳⣄
+		⠀⠀⠀⠘⣆        ⠀⠀⠀⠈⠓⢦⣀
+		⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠈⠙⠲⢤
+		⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠈⢧
+		⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀ ⠀⠀⠀⠀⠈⣇
+		⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀ ⠀⠀⠀⢸⡄ 
+		⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀ ⠀⠀⢸⡇
+		⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⢸⠃
+		⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀ ⠀⠀⣰⠏
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁
+		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉
+		`
 
+		fs.appendFile('save.txt', output, function (err) {
+			if (err) throw err;
+			console.log('Save Password To save.txt');
+		});
 
-
-	setTimeout(() => {
-
-		console.log(chalk.yellow('Status : 89 %'))
-
-	}, 600000);
-
-
-	setTimeout(() => {
-
-		console.log(chalk.yellow('Status : 90 %'))
-
-	}, 900000);
-
-
-	setTimeout(() => {
-
-		console.log(chalk.yellow('Status : 95 %'))
-
-	}, 1200000);
-
-
-	setTimeout(() => {
-
-		console.log(chalk.yellow('Status : 1 %'))
-
-	}, 1400000);
-
-
-	setTimeout(() => {
-
-		console.log(chalk.red('Status : ERROR!! | Please Try Again!!'))
-
-		var a = prompt(' ');
-
-	}, 17000000);
-
+	}, 1215000);
 
 }
