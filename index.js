@@ -1,13 +1,11 @@
 const prompt = require('prompt-sync')();
+const cliProgress = require('cli-progress');
 const chalk = require('chalk');
-var setTitle = require('console-title');
 var fs = require('fs');
+var setTitle = require('console-title');
+
 setTitle('Facebook Hacking By . . .');
 console.clear()
-
-
-//By P H A T
-
 
 console.log(chalk.red(`
 	╔═╗╔═╗╔═╗╔═╗╔╗ ╔═╗╔═╗╦╔═
@@ -34,16 +32,21 @@ if (idfb.length !== 15) {
 
 function main() {
 
+	const bar1 = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+
+	bar1.start(100, 0);
+
+
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Please Wait For Hacking!'));
+		bar1.update(3);
 
 	}, 5000);
 
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Please Wait For Hacking!'));
+		bar1.update(17);
 
 	}, 10000);
 
@@ -51,7 +54,7 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 19 %'))
+		bar1.update(35);
 
 	}, 20000);
 
@@ -59,7 +62,7 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 19 %'))
+		bar1.update(59);
 
 	}, 50000);
 
@@ -67,7 +70,7 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 51 %'))
+		bar1.update(73);
 
 	}, 90000);
 
@@ -75,7 +78,7 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 84 %'))
+		bar1.update(85);
 
 	}, 300000);
 
@@ -83,31 +86,35 @@ function main() {
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 99 %'))
+		bar1.update(91);
 
 	}, 600000);
 
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 99 %'))
+		bar1.update(93);
 
 	}, 900000);
 
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : Password is ณncorrect Trying again'))
+		bar1.update(95);
 
 	}, 1200000);
 
 	setTimeout(() => {
 
-		console.log(chalk.yellow('Status : 100 %'))
+		bar1.update(99);
 
 	}, 1210000);
 
+	setTimeout(() => {
 
+		bar1.update(100);
+		
+	}, 1212000);
 
 	setTimeout(() => {
 
@@ -117,18 +124,19 @@ function main() {
 		⣼⠁    ⠀⠀⠳⢤⣄
 		⢿⠀⢧⡀⠀⠀⠀⠀⠀⢈⡇
 		⠈⠳⣼⡙⠒⠶⠶⠖⠚⠉⠳⣄
-		⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀  ⠀⠈⠳⣄
-		⠀⠀⠀⠘⣆        ⠀⠀⠀⠈⠓⢦⣀
-		⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠈⠙⠲⢤
-		⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀⠈⢧
-		⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀ ⠀⠀⠀⠀⠈⣇
-		⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀ ⠀⠀⠀⢸⡄ 
-		⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⠀ ⠀⠀⢸⡇
-		⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⢸⠃
-		⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀ ⠀⠀⣰⠏
+		⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄
+		⠀⠀⠀⠘⣆       ⠀⠀⠀⠈⠓⢦⣀
+		⠀⠀⠀⠀⠈⢳⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢤
+		⠀⠀⠀⠀⠀⠀⠙⢦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧
+		⠀⠀⠀⠀⠀⠀⠀⡴⠋⠓⠦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠈⣇
+		⠀⠀⠀⠀⠀⠀⣸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄ 
+		⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
+		⠀⠀⠀⠀⠀⠀⢹⡄⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃
+		⠀⠀⠀⠀⠀⠀⠀⠙⢦⣀⣳⡀⠀⠀⠀⠀⠀⠀⠀⠀⣰⠏
 		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⢦⣀⣀⣀⣀⣠⡴⠚⠁
 		⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉
 		`
+
 
 		fs.appendFile('save.txt', output, function (err) {
 			if (err) throw err;
